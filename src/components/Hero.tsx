@@ -9,7 +9,7 @@ export const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8 scroll-reveal">
-            <h1 className="text-5xl lg:text-7xl font-poppins font-bold leading-tight">
+            <h1 className="text-5xl lg:text-7xl font-geist font-bold leading-tight">
               <span className="text-text-primary">Web Creatives &</span>
               <br />
               <span className="gradient-text">AI Automations</span>

@@ -35,7 +35,7 @@ export const Footer = () => {
         <div className="grid lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <div className="text-3xl font-poppins font-bold gradient-text mb-4">
+            <div className="text-3xl font-geist font-bold gradient-text mb-4">
               horizn
             </div>
             <p className="text-text-secondary mb-6 leading-relaxed">
@@ -58,7 +58,7 @@ export const Footer = () => {
           {/* Links */}
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
-              <h4 className="font-poppins font-semibold text-text-primary mb-4">
+              <h4 className="font-geist font-semibold text-text-primary mb-4">
                 {category}
               </h4>
               <ul className="space-y-3">

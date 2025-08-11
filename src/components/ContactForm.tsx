@@ -75,7 +75,7 @@ export const ContactForm = () => {
     <section id="contact" className="py-20 px-6">
       <div className="container mx-auto">
         <div className="text-center mb-16 scroll-reveal">
-          <h2 className="text-4xl lg:text-5xl font-poppins font-bold mb-6">
+          <h2 className="text-4xl lg:text-5xl font-geist font-bold mb-6">
             Ready to <span className="gradient-text">Scale Your Momentum</span>?
           </h2>
           <p className="text-xl text-text-secondary max-w-3xl mx-auto">
@@ -87,7 +87,7 @@ export const ContactForm = () => {
           {/* Contact Info */}
           <div className="scroll-reveal">
             <GlassCard className="p-8 h-full">
-              <h3 className="text-2xl font-poppins font-bold mb-6 text-text-primary">
+              <h3 className="text-2xl font-geist font-bold mb-6 text-text-primary">
                 Get In Touch
               </h3>
               

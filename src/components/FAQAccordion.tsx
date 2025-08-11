@@ -40,7 +40,7 @@ export const FAQAccordion = () => {
     <section id="faq" className="py-20 px-6">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-16 scroll-reveal">
-          <h2 className="text-4xl lg:text-5xl font-poppins font-bold mb-6">
+          <h2 className="text-4xl lg:text-5xl font-geist font-bold mb-6">
             Frequently Asked <span className="gradient-text">Questions</span>
           </h2>
           <p className="text-xl text-text-secondary">

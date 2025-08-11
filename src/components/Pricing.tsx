@@ -68,7 +68,7 @@ export const Pricing = () => {
     <section id="pricing" className="py-20 px-6">
       <div className="container mx-auto">
         <div className="text-center mb-16 scroll-reveal">
-          <h2 className="text-4xl lg:text-5xl font-poppins font-bold mb-6">
+          <h2 className="text-4xl lg:text-5xl font-geist font-bold mb-6">
             Simple, Transparent <span className="gradient-text">Pricing</span>
           </h2>
           <p className="text-xl text-text-secondary max-w-3xl mx-auto mb-8">
@@ -103,7 +103,7 @@ export const Pricing = () => {
         {/* Custom Plan */}
         <div className="scroll-reveal">
           <GlassCard variant="blue" className="p-8 text-center">
-            <h3 className="text-2xl font-poppins font-bold text-text-primary mb-4">
+            <h3 className="text-2xl font-geist font-bold text-text-primary mb-4">
               Need Something Custom?
             </h3>
             <p className="text-text-secondary mb-6 max-w-2xl mx-auto">

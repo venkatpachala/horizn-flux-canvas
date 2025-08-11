@@ -31,7 +31,7 @@ export const PricingCard = ({ name, price, description, features, isPopular, isM
       )}
 
       <div className="text-center mb-8">
-        <h3 className="text-2xl font-poppins font-bold text-text-primary mb-2">
+        <h3 className="text-2xl font-geist font-bold text-text-primary mb-2">
           {name}
         </h3>
         <p className="text-text-secondary mb-6">

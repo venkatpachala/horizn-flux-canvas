@@ -91,7 +91,7 @@ export const Services = () => {
     <section id="services" className="py-20 px-6">
       <div className="container mx-auto">
         <div className="text-center mb-16 scroll-reveal">
-          <h2 className="text-4xl lg:text-5xl font-poppins font-bold mb-6">
+          <h2 className="text-4xl lg:text-5xl font-geist font-bold mb-6">
             Our <span className="gradient-text">Services</span>
           </h2>
           <p className="text-xl text-text-secondary max-w-3xl mx-auto">
@@ -110,7 +110,7 @@ export const Services = () => {
             >
               <div className="mb-4">
                 <service.icon className="w-10 h-10 text-neon-blue mb-4" />
-                <h3 className="text-xl font-poppins font-semibold mb-3 text-text-primary">
+                <h3 className="text-xl font-geist font-semibold mb-3 text-text-primary">
                   {service.title}
                 </h3>
                 <p className="text-text-secondary leading-relaxed">
@@ -130,7 +130,7 @@ export const Services = () => {
             {selectedService && (
               <>
                 <DialogHeader>
-                  <DialogTitle className="text-2xl font-poppins font-bold gradient-text flex items-center gap-3">
+                  <DialogTitle className="text-2xl font-geist font-bold gradient-text flex items-center gap-3">
                     <selectedService.icon className="w-8 h-8" />
                     {selectedService.title}
                   </DialogTitle>

@@ -67,7 +67,7 @@ export const Testimonials = () => {
     <section id="testimonials" className="py-20 px-6">
       <div className="container mx-auto">
         <div className="text-center mb-16 scroll-reveal">
-          <h2 className="text-4xl lg:text-5xl font-poppins font-bold mb-6">
+          <h2 className="text-4xl lg:text-5xl font-geist font-bold mb-6">
             What Our Clients <span className="gradient-text">Say</span>
           </h2>
           <p className="text-xl text-text-secondary max-w-3xl mx-auto">

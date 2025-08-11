@@ -39,7 +39,7 @@ export const Process = () => {
     <section id="process" className="py-20 px-6">
       <div className="container mx-auto">
         <div className="text-center mb-16 scroll-reveal">
-          <h2 className="text-4xl lg:text-5xl font-poppins font-bold mb-6">
+          <h2 className="text-4xl lg:text-5xl font-geist font-bold mb-6">
             Our <span className="gradient-text">Process</span>
           </h2>
           <p className="text-xl text-text-secondary max-w-3xl mx-auto">
@@ -67,7 +67,7 @@ export const Process = () => {
                   <div className="mb-4 flex justify-center">
                     <step.icon className={`w-8 h-8 text-${step.color}`} />
                   </div>
-                  <h3 className="text-xl font-poppins font-semibold mb-3 text-text-primary">
+                  <h3 className="text-xl font-geist font-semibold mb-3 text-text-primary">
                     {step.title}
                   </h3>
                   <p className="text-text-secondary text-sm leading-relaxed">

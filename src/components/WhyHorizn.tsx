@@ -33,7 +33,7 @@ export const WhyHorizn = () => {
     <section id="about" className="py-20 px-6">
       <div className="container mx-auto">
         <div className="text-center mb-16 scroll-reveal">
-          <h2 className="text-4xl lg:text-5xl font-poppins font-bold mb-6">
+          <h2 className="text-4xl lg:text-5xl font-geist font-bold mb-6">
             Why <span className="gradient-text">Horizn</span>?
           </h2>
           <p className="text-xl text-text-secondary max-w-3xl mx-auto">
@@ -53,7 +53,7 @@ export const WhyHorizn = () => {
               <div className="mb-4 flex justify-center">
                 <feature.icon className="w-12 h-12 text-neon-cyan" />
               </div>
-              <h3 className="text-xl font-poppins font-semibold mb-3 text-text-primary">
+              <h3 className="text-xl font-geist font-semibold mb-3 text-text-primary">
                 {feature.title}
               </h3>
               <p className="text-text-secondary leading-relaxed">

@@ -73,7 +73,7 @@ export const WorkHighlights = () => {
     <section id="work" className="py-20 px-6">
       <div className="container mx-auto">
         <div className="text-center mb-16 scroll-reveal">
-          <h2 className="text-4xl lg:text-5xl font-poppins font-bold mb-6">
+          <h2 className="text-4xl lg:text-5xl font-geist font-bold mb-6">
             Work <span className="gradient-text">Highlights</span>
           </h2>
           <p className="text-xl text-text-secondary max-w-3xl mx-auto">
@@ -127,7 +127,7 @@ export const WorkHighlights = () => {
                   <span className="text-sm text-neon-mint font-semibold">{project.metrics}</span>
                 </div>
                 
-                <h3 className="text-xl font-poppins font-semibold mb-3 text-text-primary">
+                <h3 className="text-xl font-geist font-semibold mb-3 text-text-primary">
                   {project.title}
                 </h3>
                 
