@@ -23,7 +23,7 @@ export const PricingCard = ({ name, price, description, features, isPopular, isM
     >
       {isPopular && (
         <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-          <div className="bg-neon-cyan text-bg-primary px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2">
+          <div className="bg-neon-cyan text-black px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2">
             <Star className="w-4 h-4" />
             Most Popular
           </div>
