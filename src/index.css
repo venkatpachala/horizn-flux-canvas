@@ -9,15 +9,15 @@
 @layer base {
   :root {
     /* Horizn Brand Colors */
-    --background-primary: 215 46% 5%;        /* #0A0F1A */
-    --background-secondary: 215 40% 8%;      /* #0E1624 */
-    --surface-glass: 220 39% 11%;            /* #111827 */
-    --surface-elevated: 220 35% 15%;         /* Lighter glass */
+    --background-primary: 222 60% 6%;        /* Deep navy */
+    --background-secondary: 225 65% 10%;      /* Electric night */
+    --surface-glass: 222 40% 12%;            /* Deeper glass */
+    --surface-elevated: 222 38% 16%;         /* Lighter glass */
     
     /* Neon Accents */
-    --neon-cyan: 186 100% 47%;               /* #00E0FF */
-    --neon-blue: 206 100% 59%;               /* #33B2FF */
-    --neon-mint: 165 100% 74%;               /* #7AF7E3 */
+    --neon-cyan: 200 100% 55%;               /* Electric cyan */
+    --neon-blue: 220 100% 60%;               /* Electric blue */
+    --neon-mint: 195 100% 70%;               /* Aqua accent */
     
     /* Text Colors */
     --text-primary: 0 0% 90%;                /* White 90% opacity */
@@ -64,7 +64,10 @@
 
   body {
     @apply bg-background text-foreground font-inter antialiased;
-    background: linear-gradient(135deg, hsl(var(--background-primary)) 0%, hsl(var(--background-secondary)) 100%);
+    background:
+      radial-gradient(800px 800px at 15% 20%, hsl(var(--neon-blue) / 0.10), transparent 60%),
+      radial-gradient(600px 600px at 85% 80%, hsl(var(--neon-cyan) / 0.10), transparent 60%),
+      linear-gradient(135deg, hsl(var(--background-primary)) 0%, hsl(var(--background-secondary)) 100%);
     min-height: 100vh;
   }
   
@@ -109,12 +112,12 @@
   }
   
   .hover-glow:hover {
-    box-shadow: 0 0 30px hsl(var(--neon-cyan) / 0.4);
+    box-shadow: 0 0 30px hsl(var(--neon-blue) / 0.4);
   }
   
   /* Gradient Text */
   .gradient-text {
-    background: linear-gradient(135deg, hsl(var(--neon-cyan)), hsl(var(--neon-blue)), hsl(var(--neon-mint)));
+    background: linear-gradient(120deg, hsl(var(--neon-blue)) 20%, hsl(var(--neon-cyan)) 80%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -124,9 +127,9 @@
   .gradient-line {
     background: linear-gradient(90deg, 
       transparent 0%, 
-      hsl(var(--neon-cyan) / 0.5) 25%, 
-      hsl(var(--neon-blue) / 0.7) 50%, 
-      hsl(var(--neon-mint) / 0.5) 75%, 
+      hsl(var(--neon-blue) / 0.6) 20%, 
+      hsl(var(--neon-cyan) / 0.8) 50%, 
+      hsl(var(--neon-blue) / 0.6) 80%, 
       transparent 100%
     );
     animation: flow 3s ease-in-out infinite;
