@@ -1,47 +1,18 @@
-import { useEffect, useRef, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import { NeonButton } from "./NeonButton";
 import { GlassCard } from "./GlassCard";
-import { Magnetic } from "./Magnetic";
-import { useParallax } from "@/hooks/useParallax";
 import heroImage from "@/assets/hero-dashboard.jpg";
 
 export const Hero = () => {
-  const words = ["AI Automations", "n8n Workflows"];
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const id = setInterval(() => setIndex((i) => (i + 1) % words.length), 2400);
-    return () => clearInterval(id);
-  }, []);
-
-  const parallaxRef = useRef<HTMLDivElement>(null);
-  useParallax(parallaxRef, 0.15);
-
   return (
     <section className="min-h-screen flex items-center justify-center px-6 pt-20">
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8 scroll-reveal">
-
             <h1 className="text-5xl lg:text-7xl font-geist font-bold leading-tight">
               <span className="text-text-primary">Web Creatives &</span>
               <br />
-              <span className="gradient-text inline-block min-h-[1em]">
-                <AnimatePresence mode="wait">
-                  <motion.span
-                    key={words[index]}
-                    initial={{ opacity: 0, y: 8, scale: 0.98 }}
-                    animate={{ opacity: 1, y: 0, scale: 1 }}
-                    exit={{ opacity: 0, y: -8, scale: 0.98 }}
-                    transition={{ duration: 0.4, ease: 'easeOut' }}
-                    className="block"
-                  >
-                    {words[index]}
-                  </motion.span>
-                </AnimatePresence>
-              </span>
+              <span className="gradient-text">AI Automations</span>
               <br />
               <span className="text-text-primary">that Scale Momentum.</span>
             </h1>
@@ -51,38 +22,31 @@ export const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Magnetic>
-                <NeonButton 
-                  variant="primary" 
-                  size="lg"
-                  className="btn-shimmer"
-                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                >
-                  Start your project
-                </NeonButton>
-              </Magnetic>
-              <Magnetic>
-                <NeonButton 
-                  variant="outline" 
-                  size="lg"
-                  onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })}
-                >
-                  View work
-                </NeonButton>
-              </Magnetic>
+              <NeonButton 
+                variant="primary" 
+                size="lg"
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                Start your project
+              </NeonButton>
+              <NeonButton 
+                variant="outline" 
+                size="lg"
+                onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                View work
+              </NeonButton>
             </div>
           </div>
 
           {/* Right Content - Interactive Dashboard */}
-          <div ref={parallaxRef} className="relative scroll-reveal will-change-transform">
+          <div className="relative scroll-reveal">
             <GlassCard className="p-6 hover-lift pulse-glow" hover>
               <div className="relative overflow-hidden rounded-lg">
                 <img 
                   src={heroImage} 
                   alt="AI Automation Dashboard Interface"
                   className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                  decoding="async"
                 />
                 
                 {/* Floating Elements */}
